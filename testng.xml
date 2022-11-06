@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Login App Suite">
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.revature.runners.LoginRunner"/>
+            <class name = "com.revature.runners.NavigationRunner"/>
+            <class name = "com.revature.runners.MatrixRunner"/>
+            <class name = "com.revature.runners.DefectRunner"/>
+            <!--<class name = "com.revature.runners.TestCasesRunner"/>-->
+        </classes>
+    </test> <!-- Test -->
+
+</suite>
