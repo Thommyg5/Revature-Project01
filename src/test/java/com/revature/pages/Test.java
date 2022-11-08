@@ -38,6 +38,9 @@ public class Test {
         System.out.println(s);
         wait.until(ExpectedConditions.visibilityOf(testCasesPage.detailsButton));
         testCasesPage.detailsButton.click();
+        wait.until(ExpectedConditions.attributeContains(By.xpath("//body"), "class", "ReactModal__Body--open"));
+        s = driver.findElement(By.xpath("//body")).getAttribute("class");
+        System.out.println(s);
         wait.until(ExpectedConditions.visibilityOf(testCasesPage.modalCaseId));
         String modalId = testCasesPage.modalCaseId.getText();
         System.out.println(modalId);
@@ -47,7 +50,7 @@ public class Test {
         testCasesPage.closeModal.click();
         wait.until(ExpectedConditions.invisibilityOf(testCasesPage.modaldiv));
         String modalText = testCasesPage.modaldiv.getText();
-
+        System.out.println(modalText);
 
 
         driver.quit();

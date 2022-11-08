@@ -6,15 +6,12 @@ import io.cucumber.testng.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.time.Duration;
-
 @CucumberOptions(features = "classpath:features/testcases/testcases.feature",
         glue = "com.revature.stepimplementations"/*, publish = true*/)
-public class TestCasesRunner extends AbstractTestNGCucumberTests {
+public class Runner extends AbstractTestNGCucumberTests {
 
     public static WebDriver driver;
     public static LoginPage loginPage;
@@ -38,5 +35,6 @@ public class TestCasesRunner extends AbstractTestNGCucumberTests {
     public void cleanup(){
         driver.quit();
     }
+
 
 }

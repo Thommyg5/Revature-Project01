@@ -7,18 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestCasesPage extends TopOfPage {
 
-    @FindBy(xpath = "//div[1]/form/fieldset/textarea[1]")
+    @FindBy(xpath = "//textarea[@name='desc']")
     public WebElement descriptionBoxText;
-    @FindBy(xpath = "//div[1]/form/fieldset/textarea[2]")
+    @FindBy(xpath = "//textarea[@name='steps']")
     public WebElement stepsTextBox;
-    @FindBy(xpath = "//div[1]/form/fieldset/button")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
     @FindBy(xpath = "//div[1]/table/tbody/tr[last()]")
     public WebElement newestTestCase;
-    @FindBy(xpath = "//div[1]/table/tbody/tr[last()]/td[4]/button")
+    @FindBy(xpath = "(//button[contains(text(),'Details')])[last()]")
     public WebElement detailsButton;
-   /* @FindBy(xpath = "")
-    public WebElement*/
     @FindBy(xpath = "//div[3]/div/div")
     public WebElement modal;
     @FindBy(xpath = "//div[@class='ReactModalPortal']//h3")
@@ -31,14 +29,14 @@ public class TestCasesPage extends TopOfPage {
     public WebElement modaldiv;
     @FindBy(xpath = "//div[3]/div/div/button[2]")
     public WebElement modalEditButton;
-    @FindBy(xpath = "//div/button[text()='Edit']")
+    /*@FindBy(xpath = "//div/button[text()='Edit']")
     public WebElement innerModalEditButton;
     @FindBy(xpath = "//div/fieldset[1]/textarea[1]")
     public WebElement modalDescriptionTextArea;
     @FindBy(xpath = "//div/fieldset[1]/textarea[2]")
     public WebElement modalStepsTextArea;
     @FindBy(xpath = "//div/fieldset[2]/textarea")
-    public WebElement modalSummaryTextArea;
+    public WebElement modalSummaryTextArea;*/
 
 
 
