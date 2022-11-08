@@ -4,6 +4,6 @@ This was a project created during the Revature training program where trainees w
 The link to the BugCatcher website can be found here: https://bugcatcher-jasdhir.coe.revaturelabs.com/?dev=0
 
 Technologies used:
--Selenium
--Cucumber
--TestNG
+- Selenium
+- Cucumber
+- TestNG
